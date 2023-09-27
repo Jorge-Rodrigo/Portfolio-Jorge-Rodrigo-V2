@@ -72,5 +72,13 @@ section {
       font-size: 20px;
       color: var(--color-white);
     }
+    div {
+      width: 100%;
+      padding: 15px 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 70px;
+    }
   }
 }
