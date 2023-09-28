@@ -1,16 +1,16 @@
 section {
-  padding-top: 90px;
+  padding-top: 5.625rem;
   background-image: url("../../../assets/gifs/purple.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
 
   .mainInfo {
-    padding-top: 100px;
+    padding-top: 6.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
     h1 {
       font-family: var(--font-koho);
       color: var(--color-white);
@@ -19,7 +19,7 @@ section {
     h2 {
       font-family: var(--font-koho);
       color: var(--color-white);
-      font-size: 15px;
+      font-size: 0.9375rem;
     }
     a {
       cursor: pointer;
@@ -27,52 +27,52 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 0.625rem;
 
       background-color: var(--color-gray);
-      border: 2px var(--color-purple1) solid;
+      border: 0.125rem var(--color-purple1) solid;
       width: 45%;
-      height: 26px;
+      height: 1.625rem;
       color: var(--color-white);
       font-weight: 600;
-      @media (min-width: 400px) {
+      @media (min-width: 25rem) {
         width: 35%;
       }
-      @media (min-width: 800px) {
+      @media (min-width: 50rem) {
         width: 16%;
       }
       img {
-        width: 15px;
-        height: 15px;
+        width: 0.9375rem;
+        height: 0.9375rem;
       }
     }
     a:hover {
       background-color: var(--color-purple2);
-      border: 2px solid var(--color-white);
+      border: 0.125rem solid var(--color-white);
     }
   }
   .aboutInfo {
     background-color: var(--color-purple2);
-    margin: 275px 15px 0 15px;
-    padding: 10px 10px;
-    border-radius: 10px;
+    margin: 17.1875rem 0.9375rem 0 0.9375rem;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.625rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.9375rem;
     .firstStop {
-      width: 55px;
-      height: 55px;
-      padding-right: 5px;
-      border-right: 3px solid var(--color-white);
+      width: 3.4375rem;
+      height: 3.4375rem;
+      padding-right: 0.3125rem;
+      border-right: 0.1875rem solid var(--color-white);
     }
     h2 {
-      width: 185px;
+      width: 11.5625rem;
       font-family: var(--font-koho);
-      font-size: 20px;
+      font-size: 1.25rem;
       color: var(--color-white);
     }
     div {
-      margin-top: 15px;
+      margin-top: 0.9375rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -80,20 +80,20 @@ section {
 
       img {
         border-radius: 100%;
-        width: 165px;
-        height: 165px;
+        width: 10.3125rem;
+        height: 10.3125rem;
       }
-      @media (min-width: 800px) {
+      @media (min-width: 50rem) {
         img {
-          width: 205px;
-          height: 205px;
+          width: 12.8125rem;
+          height: 12.8125rem;
         }
       }
       p {
         font-family: var(--font-koho);
         color: var(--color-white);
-        font-size: 16px;
-        margin-top: 20px;
+        font-size: 1rem;
+        margin-top: 1.25rem;
       }
     }
   }

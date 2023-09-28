@@ -4,63 +4,63 @@ section {
   background-size: 100% 100%;
   .projects {
     width: 100%;
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.9375rem;
 
     .firstStop {
-      width: 55px;
-      height: 55px;
+      width: 3.4375rem;
+      height: 3.4375rem;
     }
     h2 {
-      width: 185px;
+      width: 11.5625rem;
       font-family: var(--font-koho);
-      font-size: 20px;
+      font-size: 1.25rem;
       color: var(--color-white);
     }
     ul {
       list-style: none;
       width: 100%;
-      padding: 15px 15px;
+      padding: 0.9375rem 0.9375rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 1.5625rem;
       li {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 0.9375rem;
         width: 100%;
         background-color: var(--color-purple2);
         color: var(--color-white);
         font-family: var(--font-koho);
-        border: 2px solid transparent;
-        padding: 15px 13px;
-        @media (min-width: 700px) {
+        border: 0.125rem solid transparent;
+        padding: 0.9375rem 0.8125rem;
+        @media (min-width: 43.75rem) {
           width: 43%;
         }
-        @media (min-width: 940px) {
+        @media (min-width: 58.75rem) {
           width: 30%;
         }
 
         img {
-          width: 45px;
-          height: 45px;
+          width: 2.8125rem;
+          height: 2.8125rem;
           cursor: pointer;
         }
         .applicationLink {
           text-align: center;
-          width: 140px;
-          padding: 5px 10px;
-          border: 2px solid var(--color-purple3);
+          width: 8.75rem;
+          padding: 0.3125rem 0.625rem;
+          border: 0.125rem solid var(--color-purple3);
           background-color: var(--color-purple1);
           color: var(--color-white);
           text-decoration: none;
-          border-radius: 8px;
+          border-radius: 0.5rem;
         }
         .applicationLink:hover {
           background-color: var(--color-purple3);
-          border: 2px solid var(--color-purple1);
+          border: 0.125rem solid var(--color-purple1);
         }
         div {
           display: flex;
@@ -68,55 +68,55 @@ section {
           align-items: center;
         }
         .techs {
-          margin-top: 15px;
+          margin-top: 0.9375rem;
           display: flex;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 0.625rem;
           span {
-            padding: 3px 9px;
-            border-radius: 8px;
+            padding: 0.1875rem 0.5625rem;
+            border-radius: 0.5rem;
             background-color: var(--color-purple3);
             color: var(--color-white);
           }
         }
       }
       li:hover {
-        border: 2px solid var(--color-purple1);
+        border: 0.125rem solid var(--color-purple1);
       }
     }
   }
   .contact {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     background-color: var(--color-purple3);
     width: 100%;
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.9375rem;
 
     .firstStop {
-      width: 55px;
-      height: 55px;
+      width: 3.4375rem;
+      height: 3.4375rem;
     }
     h2 {
-      width: 185px;
+      width: 11.5625rem;
       font-family: var(--font-koho);
-      font-size: 20px;
+      font-size: 1.25rem;
       color: var(--color-white);
     }
     div {
       width: 100%;
-      padding: 15px 15px;
+      padding: 0.9375rem 0.9375rem;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 30px;
-      @media (min-width: 700px) {
-        gap: 70px;
+      gap: 1.875rem;
+      @media (min-width: 43.75rem) {
+        gap: 4.375rem;
       }
       img {
-        width: 50px;
-        height: 50px;
+        width: 3.125rem;
+        height: 3.125rem;
       }
     }
   }
