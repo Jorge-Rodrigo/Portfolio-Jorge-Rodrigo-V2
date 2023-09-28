@@ -1,4 +1,4 @@
-<section>
+<section id="projects">
   <div class="projects">
     <img
       src="../../../assets/icons/space-exploration 1.png"
@@ -7,69 +7,33 @@
     />
     <h2>Terceira Parada: Projetos</h2>
     <ul>
-      <li>
+      <li *ngFor="let repo of repos">
         <div>
-          <h3>Projeto Legal</h3>
-          <img
-            src="../../../assets//icons/icons8-github-100.png"
-            alt=""
-            class="github"
-          />
+          <h3>{{ repo.name }}</h3>
+          <a [href]="repo.html_url" target="_blank"
+            ><img
+              src="../../../assets//icons/icons8-github-100.png"
+              alt=""
+              class="github"
+          /></a>
         </div>
-        <p>um projeto muito divertido eba to deliza sansjajdnjaijfkna</p>
-        <p class="techs">Tecnologia principal: <span>Typescript</span></p>
-      </li>
-      <li>
-        <div>
-          <h3>Projeto Legal</h3>
-          <img
-            src="../../../assets//icons/icons8-github-100.png"
-            alt=""
-            class="github"
-          />
-        </div>
-        <p>um projeto muito divertido eba to deliza sansjajdnjaijfkna</p>
-        <p class="techs">Tecnologia principal: <span>Typescript</span></p>
-      </li>
-      <li>
-        <div>
-          <h3>Projeto Legal</h3>
-          <img
-            src="../../../assets//icons/icons8-github-100.png"
-            alt=""
-            class="github"
-          />
-        </div>
-        <p>um projeto muito divertido eba to deliza sansjajdnjaijfkna</p>
-        <p class="techs">Tecnologia principal: <span>Typescript</span></p>
-      </li>
-      <li>
-        <div>
-          <h3>Projeto Legal</h3>
-          <img
-            src="../../../assets//icons/icons8-github-100.png"
-            alt=""
-            class="github"
-          />
-        </div>
-        <p>um projeto muito divertido eba to deliza sansjajdnjaijfkna</p>
-        <p class="techs">Tecnologia principal: <span>Typescript</span></p>
-      </li>
-      <li>
-        <div>
-          <h3>Projeto Legal</h3>
-          <img
-            src="../../../assets//icons/icons8-github-100.png"
-            alt=""
-            class="github"
-          />
-        </div>
-        <p>um projeto muito divertido eba to deliza sansjajdnjaijfkna</p>
-        <p class="techs">Tecnologia principal: <span>Typescript</span></p>
+        <p>{{ repo.description }}</p>
+
+        <p class="techs" *ngIf="repo.languages.length > 0">
+          Tecnologias:
+          <span *ngFor="let languages of repo.languages">{{ languages }}</span>
+        </p>
+        <a
+          [href]="repo.homepage"
+          target="_blank"
+          *ngIf="repo.homepage !== null"
+          class="applicationLink"
+          >Visitar Aplicação</a
+        >
       </li>
     </ul>
   </div>
-  <div class="contact">
+  <div class="contact" id="contacts">
     <img
       src="../../../assets/icons/space-exploration 1.png"
       alt="foguete em um planeta"

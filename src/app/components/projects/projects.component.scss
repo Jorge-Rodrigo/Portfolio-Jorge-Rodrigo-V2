@@ -27,14 +27,40 @@ section {
       flex-wrap: wrap;
       gap: 25px;
       li {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 80%;
         background-color: var(--color-purple2);
         color: var(--color-white);
         font-family: var(--font-koho);
+        border: 2px solid transparent;
         padding: 15px 13px;
+        @media (min-width: 700px) {
+          width: 43%;
+        }
+        @media (min-width: 940px) {
+          width: 30%;
+        }
 
         img {
           width: 45px;
           height: 45px;
+          cursor: pointer;
+        }
+        .applicationLink {
+          text-align: center;
+          width: 140px;
+          padding: 5px 10px;
+          border: 2px solid var(--color-purple3);
+          background-color: var(--color-purple1);
+          color: var(--color-white);
+          text-decoration: none;
+          border-radius: 8px;
+        }
+        .applicationLink:hover {
+          background-color: var(--color-purple3);
+          border: 2px solid var(--color-purple1);
         }
         div {
           display: flex;
@@ -43,13 +69,19 @@ section {
         }
         .techs {
           margin-top: 15px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
           span {
             padding: 3px 9px;
             border-radius: 8px;
-            background-color: var(--color-black);
+            background-color: var(--color-purple3);
             color: var(--color-white);
           }
         }
+      }
+      li:hover {
+        border: 2px solid var(--color-purple1);
       }
     }
   }

@@ -33,6 +33,25 @@
         width: 60px;
         height: 60px;
       }
+      .skillName {
+        display: none;
+      }
+    }
+    li:hover {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .skillName {
+        display: block;
+        position: absolute;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        font-family: var(--font-koho);
+
+        padding: 5px;
+        top: -30px;
+      }
     }
   }
 }
