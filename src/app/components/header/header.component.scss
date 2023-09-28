@@ -14,6 +14,9 @@ nav {
     }
     li {
       cursor: pointer;
+      a {
+        border: 2px solid transparent;
+      }
 
       :hover {
         border: 2px solid var(--color-white);

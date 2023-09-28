@@ -6,7 +6,9 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 25px 0;
-  button {
+  a {
+    cursor: pointer;
+    text-decoration: none;
     background-color: var(--color-black);
     padding: 5px 18px;
     border-radius: 18px;
@@ -21,5 +23,8 @@ footer {
       width: 25px;
       height: 25px;
     }
+  }
+  a:hover {
+    border: 2px solid var(--color-white);
   }
 }

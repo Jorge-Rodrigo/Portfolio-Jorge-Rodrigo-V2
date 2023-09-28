@@ -17,12 +17,18 @@ export class ProjectsComponent {
     });
   }
   getLanguagesForRepos() {
-    for (const repo of this.repos) {
-      this.repoService
-        .getRepoLanguages(repo.full_name)
-        .subscribe((languages: any) => {
-          repo.languages = Object.keys(languages);
-        });
-    }
+    const processRepos = (index: number) => {
+      if (index < this.repos.length) {
+        const repo = this.repos[index];
+        this.repoService
+          .getRepoLanguages(repo.full_name)
+          .subscribe((languages: any) => {
+            repo.languages = Object.keys(languages);
+
+            setTimeout(() => processRepos(index + 1), 1000);
+          });
+      }
+    };
+    processRepos(0);
   }
 }
